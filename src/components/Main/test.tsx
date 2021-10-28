@@ -9,27 +9,70 @@ describe('<Main/>', () => {
       screen.getByRole('heading', { name: /React Avançado/i })
     ).toBeInTheDocument()
     expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        background-color: #06092b;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .c1 {
+        width: 25rem;
+        margin-bottom: 2rem;
+      }
+
+      .c2 {
+        font-size: 2.5rem;
+      }
+
+      .c3 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+
+      .c4 {
+        margin-top: 3rem;
+        width: min(30rem,100%);
+      }
+
       <main
-        class="styles__Wrapper-sc-135gxlq-0 ZcNPM"
+        class="c0"
       >
         <img
           alt="Imagem de um átomo e React Avançado escrito ao lado"
-          class="styles__Logo-sc-135gxlq-1 desROP"
+          class="c1"
           src="img/logo.svg"
         />
         <h1
-          class="styles__Title-sc-135gxlq-2 ixBWrJ"
+          class="c2"
         >
           React Avançado
         </h1>
         <h2
-          class="styles__Description-sc-135gxlq-3 kLatoy"
+          class="c3"
         >
           Typescript, ReactJS,NextJS e Styled Components
         </h2>
         <img
           alt="Um desenvolvedor de frente para uma tela de código"
-          class="styles__Illustratration-sc-135gxlq-4 ivTGhk"
+          class="c4"
           src="/img/hero-illustration.svg"
         />
       </main>
